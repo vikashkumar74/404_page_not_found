@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+
+.not-found {
+    padding: 2rem;
+}
+
+/* main container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 77vh;
+}
+
+/* LEGT BOX */
+.leftbox {
+  width: 25%;
+  height: 45vh;
+}
+.leftbox img {
+  width: 100%;
+  height: 45vh;
+}
+/* RIGHT BOX section */
+.rightbox {
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+
+  height: 45vh;
+  justify-content: space-between;
+}
+
+/* HEADING SECTION */
+.title {
+  margin-top: 1rem;
+  width: 18rem;
+}
+.para {
+  width: 12rem;
+}
+button {
+  font-size: 10px;
+  width: 7.6rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin: 2%;
+}
+
+/* RESPONSIVE section */
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftbox {
+    width: 55%;
+  }
+  .rightbox {
+    width: 55%;
+    margin-left: 0px;
+  }
+
+  .leftbox {
+    height: 35vh;
+  }
+  .leftbox img {
+    height: 95%;
+  }
+
+  .footer {
+    margin-top: 12%;
+  }
+}
+@media (max-width: 355px) {
+  .container {
+    height: 100vh;
+  }
+}
